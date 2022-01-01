@@ -1,7 +1,0 @@
-[Desktop Entry]
-Name=dwxmlcreator
-Exec=dwxmlcreator
-Terminal=false
-Type=Application
-Categories=GTK;
-StartupNotify=true

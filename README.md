@@ -1,4 +1,4 @@
-# DWXMLCreator
+# Dynamic Wallpaper Creator
 Dynamic wallpaper creator for GNU/Linux
 
 ![screenshot.png](/data/s1.png)

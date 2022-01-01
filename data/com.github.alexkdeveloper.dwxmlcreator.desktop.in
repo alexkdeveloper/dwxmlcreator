@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Dynamic Wallpaper Creator
+Comment=Simple dynamic wallpaper creator
+Icon=com.github.alexkdeveloper.dwxmlcreator
+Exec=com.github.alexkdeveloper.dwxmlcreator
+Terminal=false
+Type=Application
+Categories=GTK;
+StartupNotify=true

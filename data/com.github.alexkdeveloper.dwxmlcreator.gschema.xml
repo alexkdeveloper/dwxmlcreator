@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="dwxmlcreator">
+	<schema id="com.github.alexkdeveloper.dwxmlcreator" path="/org/example/App/">
+	</schema>
+</schemalist>

@@ -1,11 +1,11 @@
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
 name: Flatpak
 jobs:
   flatpak:
-    name: Build flatpak from main
+    name: Build flatpak
     runs-on: ubuntu-latest
     container:
       image: bilelmoussaoui/flatpak-github-actions:gnome-41

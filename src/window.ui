@@ -615,7 +615,7 @@
             <property name="can-focus">True</property>
             <property name="focus-on-click">False</property>
             <property name="receives-default">True</property>
-            <property name="tooltip-text" translatable="yes">back</property>
+            <property name="tooltip-text" translatable="yes">Back</property>
             <property name="always-show-image">True</property>
             <child>
               <object class="GtkImage">

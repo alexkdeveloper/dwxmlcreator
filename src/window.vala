@@ -178,7 +178,7 @@ namespace Dwxmlcreator {
 		private void add_start_time(){
 		if(is_empty(year.get_text())||is_empty(month.get_text())||is_empty(day.get_text())||
 		is_empty(hours.get_text())||is_empty(minutes.get_text())||is_empty(seconds.get_text())){
-            alert("Enter correct data in all fields!");
+            alert(_("Enter correct data in all fields!"));
             return;
 		}
            start_time ="<background>
@@ -196,10 +196,11 @@ namespace Dwxmlcreator {
 		private void add_image(){
           if(is_empty(path_to_image.get_text())||is_empty(transition_duration.get_text())||
           is_empty(static_duration.get_text())){
-              alert("Enter correct data in all fields!");
+              alert(_("Enter correct data in all fields!"));
               return;
           }
           counter++;
+          string type = "type="+"\"overlay\"";
           duration = int.parse(static_duration.get_text())*60-int.parse(transition_duration.get_text());
           if(counter != 1){
              image = path_to_image.get_text();
@@ -209,7 +210,7 @@ namespace Dwxmlcreator {
     <duration>"+duration.to_string()+".0"+"</duration>
     <file>"+image+"</file>
   </static>
-  <transition>
+  <transition "+type+">
     <duration>"+transition_duration.get_text()+".0"+"</duration>
     <from>"+image+"</from>\n";
     }else{
@@ -218,17 +219,17 @@ namespace Dwxmlcreator {
     <duration>"+duration.to_string()+".0"+"</duration>
     <file>"+first_image+"</file>
   </static>
-  <transition>
+  <transition "+type+"> 
     <duration>"+transition_duration.get_text()+".0"+"</duration>
     <from>"+first_image+"</from>\n";
     }
-  image_counter.set_text(counter.to_string()+" images were added");
+  image_counter.set_text(counter.to_string()+_(" images were added"));
   path_to_image.set_text("");
   builder.append(main_part);
    }
 		private void go_to_create_xml_page(){
 		  if(counter < 2){
-		      alert("Add images");
+		      alert(_("Add images"));
 		      return;
 		  }
 		 stack.visible_child = create_xml_box;
@@ -237,11 +238,11 @@ namespace Dwxmlcreator {
 		}
         private void create_xml(){
            if(builder.str==""){
-               alert("Nothing to create");
+               alert(_("Nothing to create"));
                return;
            }
            if(is_empty(path_to_xml_directory.get_text())||is_empty(xml_name.get_text())){
-               alert("Enter correct data in all fields!");
+               alert(_("Enter correct data in all fields!"));
                return;
            }
            string end_xml = "<to>"+first_image+"</to>
@@ -256,17 +257,17 @@ namespace Dwxmlcreator {
             stderr.printf ("Error: %s\n", e.message);
           }
             if(file.query_exists()){
-                alert("File created successfully");
+                alert(_("File created successfully"));
             }else{
-                alert("An unknown error has occurred! Failed to create file");
+                alert(_("An unknown error has occurred!\nFailed to create file"));
             }
             counter = 0;
             builder = new StringBuilder();
             xml_name.set_text("");
-            image_counter.set_text("Add images");
+            image_counter.set_text(_("Add images"));
         }
 		private void on_path_to_image(){
-		     var file_chooser = new Gtk.FileChooserDialog ("Select image file", this, Gtk.FileChooserAction.OPEN, "_Cancel", Gtk.ResponseType.CANCEL, "_Open", Gtk.ResponseType.ACCEPT);
+		     var file_chooser = new Gtk.FileChooserDialog (_("Select image file"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
 	    Gtk.FileFilter filter = new Gtk.FileFilter ();
 		file_chooser.set_filter (filter);
 		filter.add_mime_type ("image/jpeg");
@@ -298,7 +299,7 @@ namespace Dwxmlcreator {
         file_chooser.destroy ();
 		}
 		private void on_path_to_xml_directory(){
-             var file_chooser = new Gtk.FileChooserDialog ("Choose a directory", this, Gtk.FileChooserAction.SELECT_FOLDER, "_Cancel", Gtk.ResponseType.CANCEL, "_Open", Gtk.ResponseType.ACCEPT);
+             var file_chooser = new Gtk.FileChooserDialog (_("Choose a directory"), this, Gtk.FileChooserAction.SELECT_FOLDER, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
         if (file_chooser.run () == Gtk.ResponseType.ACCEPT) {
             path_to_xml_directory.set_text(file_chooser.get_filename());
         }
@@ -310,7 +311,7 @@ namespace Dwxmlcreator {
        }
       private void alert (string str){
           var dialog_alert = new Gtk.MessageDialog(this, Gtk.DialogFlags.MODAL, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, str);
-          dialog_alert.set_title("Message");
+          dialog_alert.set_title(_("Message"));
           dialog_alert.run();
           dialog_alert.destroy();
        }

@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-03-27 12:58+0800\n"
+"PO-Revision-Date: 2022-03-27 19:33+0100\n"
+"Last-Translator: Albano Battistella <albano_battistella@hotmail.com>\n"
+"Language-Team: Itaian\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: data\n"
+"X-Poedit-SearchPath-1: src\n"
+"X-Poedit-SearchPath-2: src/window.vala\n"
+
+#: src/window.ui:29
+msgid "Enter start time"
+msgstr "Inserisci l'ora di inizio"
+
+#: src/window.ui:53
+msgid "day:"
+msgstr "giorno:"
+
+#: src/window.ui:91
+msgid "month:"
+msgstr "mese:"
+
+#: src/window.ui:129
+msgid "year:"
+msgstr "anno:"
+
+#: src/window.ui:180
+msgid "hours:"
+msgstr "ore:"
+
+#: src/window.ui:218
+msgid "minutes:"
+msgstr "minuti:"
+
+#: src/window.ui:257
+msgid "seconds:"
+msgstr "secondi:"
+
+#: src/window.ui:294
+msgid "TO ADD IMAGES"
+msgstr "AGGIUNGERE IMMAGINI"
+
+#: src/window.ui:308
+msgid "page0"
+msgstr "pagina0"
+
+#: src/window.ui:322 src/window.vala:266
+msgid "Add images"
+msgstr "Aggiungi immagini"
+
+#: src/window.ui:340
+msgid "specify the path to the image:"
+msgstr "specificare il percorso dell'immagine:"
+
+#: src/window.ui:383
+msgid "transition duration (sec):"
+msgstr "durata della transizione (sec):"
+
+#: src/window.ui:397
+msgid "5"
+msgstr "5"
+
+#: src/window.ui:422
+msgid "duration of the show (min):"
+msgstr "durata della visione (min):"
+
+#: src/window.ui:436
+msgid "60"
+msgstr "60"
+
+#: src/window.ui:453
+msgid "ADD"
+msgstr "AGGIUNGI"
+
+#: src/window.ui:473
+msgid "TO CREATE A FILE"
+msgstr "CREARE UN FILE"
+
+#: src/window.ui:487
+msgid "page1"
+msgstr "pagina1"
+
+#: src/window.ui:502
+msgid "Specify the name and location of the file"
+msgstr "Specificare il nome e la posizione del file"
+
+#: src/window.ui:520
+msgid "specify where to save the file:"
+msgstr "specificare dove salvare il file:"
+
+#: src/window.ui:557
+msgid "specify the file name:"
+msgstr "specificare il nome del file:"
+
+#: src/window.ui:586
+msgid "CREATE XML FILE"
+msgstr "CREA FILE XML"
+
+#: src/window.ui:600
+msgid "page2"
+msgstr "pagina2"
+
+#: src/window.ui:618
+msgid "Back"
+msgstr "Indietro"
+
+#: src/window.vala:181
+msgid "Enter correct data in all fields!"
+msgstr "Inserisci i dati corretti in tutti i campi!"
+
+#: src/window.vala:259
+msgid "File created successfully"
+msgstr "File creato con successo"
+
+#: src/window.vala:261
+msgid ""
+"An unknown error has occurred!\n"
+"Failed to create file"
+msgstr ""
+"Si è verificato un errore sconosciuto!\n"
+"Creazione del file fallita"
+
+#: src/window.vala:269
+msgid "Select image file"
+msgstr "Seleziona file immagine"
+
+#: src/window.vala:269 src/window.vala:301
+msgid "_Cancel"
+msgstr "_Cancella"
+
+#: src/window.vala:269 src/window.vala:301
+msgid "_Open"
+msgstr "_Apri"
+
+#: src/window.vala:301
+msgid "Choose a directory"
+msgstr "Scegli una directory"
+
+#: src/window.vala:313
+msgid "Message"
+msgstr "Messaggio"

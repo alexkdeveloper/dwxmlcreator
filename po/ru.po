@@ -1,0 +1,150 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-03-27 12:58+0800\n"
+"PO-Revision-Date: 2022-03-27 13:33+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: data\n"
+"X-Poedit-SearchPath-1: src\n"
+"X-Poedit-SearchPath-2: src/window.vala\n"
+
+#: src/window.ui:29
+msgid "Enter start time"
+msgstr "Введите время начала"
+
+#: src/window.ui:53
+msgid "day:"
+msgstr "день:"
+
+#: src/window.ui:91
+msgid "month:"
+msgstr "месяц:"
+
+#: src/window.ui:129
+msgid "year:"
+msgstr "год:"
+
+#: src/window.ui:180
+msgid "hours:"
+msgstr "часы:"
+
+#: src/window.ui:218
+msgid "minutes:"
+msgstr "минуты:"
+
+#: src/window.ui:257
+msgid "seconds:"
+msgstr "секунды:"
+
+#: src/window.ui:294
+msgid "TO ADD IMAGES"
+msgstr "К ДОБАВЛЕНИЮ ИЗОБРАЖЕНИЙ"
+
+#: src/window.ui:308
+msgid "page0"
+msgstr ""
+
+#: src/window.ui:322 src/window.vala:266
+msgid "Add images"
+msgstr "Добавьте изображения"
+
+#: src/window.ui:340
+msgid "specify the path to the image:"
+msgstr "путь до изображения:"
+
+#: src/window.ui:383
+msgid "transition duration (sec):"
+msgstr "время перехода (сек):"
+
+#: src/window.ui:397
+msgid "5"
+msgstr ""
+
+#: src/window.ui:422
+msgid "duration of the show (min):"
+msgstr "время показа (мин):"
+
+#: src/window.ui:436
+msgid "60"
+msgstr ""
+
+#: src/window.ui:453
+msgid "ADD"
+msgstr "ДОБАВИТЬ"
+
+#: src/window.ui:473
+msgid "TO CREATE A FILE"
+msgstr "К СОЗДАНИЮ ФАЙЛА"
+
+#: src/window.ui:487
+msgid "page1"
+msgstr ""
+
+#: src/window.ui:502
+msgid "Specify the name and location of the file"
+msgstr "Имя и расположение файла"
+
+#: src/window.ui:520
+msgid "specify where to save the file:"
+msgstr "место сохранения файла:"
+
+#: src/window.ui:557
+msgid "specify the file name:"
+msgstr "имя файла:"
+
+#: src/window.ui:586
+msgid "CREATE XML FILE"
+msgstr "СОЗДАТЬ ФАЙЛ"
+
+#: src/window.ui:600
+msgid "page2"
+msgstr ""
+
+#: src/window.ui:618
+msgid "Back"
+msgstr "Назад"
+
+#: src/window.vala:181
+msgid "Enter correct data in all fields!"
+msgstr "Введите корректные данные во все поля!"
+
+#: src/window.vala:259
+msgid "File created successfully"
+msgstr "Файл успешно создан"
+
+#: src/window.vala:261
+msgid ""
+"An unknown error has occurred!\n"
+"Failed to create file"
+msgstr ""
+"Произошла неизвестная ошибка!\n"
+"Не удалось создать файл"
+
+#: src/window.vala:269
+msgid "Select image file"
+msgstr "Выберите изображение"
+
+#: src/window.vala:269 src/window.vala:301
+msgid "_Cancel"
+msgstr "Отмена"
+
+#: src/window.vala:269 src/window.vala:301
+msgid "_Open"
+msgstr "Открыть"
+
+#: src/window.vala:301
+msgid "Choose a directory"
+msgstr "Выбор директории"
+
+#: src/window.vala:313
+msgid "Message"
+msgstr "Сообщение"

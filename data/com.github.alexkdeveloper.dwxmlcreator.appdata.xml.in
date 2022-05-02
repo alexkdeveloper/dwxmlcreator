@@ -57,6 +57,13 @@
 	    <content_attribute id="money-gambling">none</content_attribute>
 	  </content_rating>
 	  <releases>
+	     <release version="1.0.3" date="2022-05-02">
+	          <description>
+	            <ul>
+	              <li>Added Czech translation</li>
+	            </ul>
+	          </description>
+	        </release> 
 	     <release version="1.0.2" date="2022-03-29">
 	          <description>
 	            <ul>

@@ -1,0 +1,149 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-05-01 17:45+0800\n"
+"Last-Translator: vikdevelop\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: data\n"
+"X-Poedit-SearchPath-1: src\n"
+"X-Poedit-SearchPath-2: src/window.vala\n"
+
+#: src/window.ui:29
+msgid "Enter start time"
+msgstr "Zadejte startovácí čas"
+
+#: src/window.ui:53
+msgid "day:"
+msgstr "Den:"
+
+#: src/window.ui:91
+msgid "month:"
+msgstr "Měsíc:"
+
+#: src/window.ui:129
+msgid "year:"
+msgstr "Rok:"
+
+#: src/window.ui:180
+msgid "hours:"
+msgstr "Hodiny:"
+
+#: src/window.ui:218
+msgid "minutes:"
+msgstr "Minuty:"
+
+#: src/window.ui:257
+msgid "seconds:"
+msgstr "Sekundy:"
+
+#: src/window.ui:294
+msgid "TO ADD IMAGES"
+msgstr "Přidání obrázků"
+
+#: src/window.ui:308
+msgid "page0"
+msgstr "strana0"
+
+#: src/window.ui:322 src/window.vala:266
+msgid "Add images"
+msgstr "Přidat obrázky"
+
+#: src/window.ui:340
+msgid "specify the path to the image:"
+msgstr "zadejte cestu k obrázku:"
+
+#: src/window.ui:383
+msgid "transition duration (sec):"
+msgstr "Čas přechodu (sek):"
+
+#: src/window.ui:397
+msgid "5"
+msgstr ""
+
+#: src/window.ui:422
+msgid "duration of the show (min):"
+msgstr "doba trvání přehlídky (min):"
+
+#: src/window.ui:436
+msgid "60"
+msgstr ""
+
+#: src/window.ui:453
+msgid "ADD"
+msgstr "PŘIDAT"
+
+#: src/window.ui:473
+msgid "TO CREATE A FILE"
+msgstr "VYTVOŘIT SOUBOR"
+
+#: src/window.ui:487
+msgid "page1"
+msgstr "strana2"
+
+#: src/window.ui:502
+msgid "Specify the name and location of the file"
+msgstr "Zadejte název a umíštění souboru"
+
+#: src/window.ui:520
+msgid "specify where to save the file:"
+msgstr "Zadejte, kam se má soubor uložit:"
+
+#: src/window.ui:557
+msgid "specify the file name:"
+msgstr "Zadejte jméno souboru:"
+
+#: src/window.ui:586
+msgid "CREATE XML FILE"
+msgstr "VYTVOŘIT XML SOUBOR"
+
+#: src/window.ui:600
+msgid "page2"
+msgstr ""
+
+#: src/window.ui:618
+msgid "Back"
+msgstr "Zpět"
+
+#: src/window.vala:181
+msgid "Enter correct data in all fields!"
+msgstr "Zadejte správná data ve všech polích!"
+
+#: src/window.vala:259
+msgid "File created successfully"
+msgstr "Soubor byl vytvořen úspěšně"
+
+#: src/window.vala:261
+msgid ""
+"An unknown error has occurred!\n"
+"Failed to create file"
+msgstr ""
+"Objevila se neznámá chyba!\n"
+"Nebylo možné vytvořit soubor"
+
+#: src/window.vala:269
+msgid "Select image file"
+msgstr "Vyberte obrázek"
+
+#: src/window.vala:269 src/window.vala:301
+msgid "_Cancel"
+msgstr "_Zrušit"
+
+#: src/window.vala:269 src/window.vala:301
+msgid "_Open"
+msgstr "_Otevřít"
+
+#: src/window.vala:301
+msgid "Choose a directory"
+msgstr "Vybrat adresář"
+
+#: src/window.vala:313
+msgid "Message"
+msgstr "Zpráva"

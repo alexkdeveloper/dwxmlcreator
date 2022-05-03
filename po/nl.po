@@ -1,0 +1,195 @@
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the dwxmlcreator package.
+#
+# Heimen Stoffels <vistausss@fastmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: dwxmlcreator\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-03 13:58+0200\n"
+"PO-Revision-Date: 2022-05-03 14:05+0200\n"
+"Last-Translator: Heimen Stoffels <vistausss@fastmail.com>\n"
+"Language-Team: Dutch <kde-i18n-nl@kde.org>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.04.0\n"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.desktop.in:3
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:6
+msgid "Dynamic Wallpaper Creator"
+msgstr "Dynamische achtergronden maken"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.desktop.in:4
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:7
+msgid "Simple dynamic wallpaper creator"
+msgstr "Een eenvoudige toepassing voor het maken van dynamische achtergronden"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.desktop.in:10
+msgid "Dynamic;Wallpaper;"
+msgstr "Dynamisch;Bureaublad;Achtergrond;"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:9
+msgid ""
+"A program for creating dynamic wallpapers from a sequence of individual "
+"static images. As a result of the program, a file in XML format is obtained, "
+"which can be specified as wallpaper in the additional settings of the GNOME "
+"environment."
+msgstr ""
+"Een toepassing voor het maken van dynamische achtergronden op basis van "
+"een reeks afbeeldingen. Het resultaat wordt opgeslagen als xml-bestand, wat "
+"kan worden gekozen in de GNOME-systeemvoorkeuren."
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:14
+msgid "Alex Kryuchkov"
+msgstr "Alex Kryuchkov"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:35
+msgid "Added Czech translation"
+msgstr "Nieuw: Tsjechische vertaling"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:42
+msgid "Added Italian translation"
+msgstr "Nieuw: Italiaanse vertaling"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:49
+msgid "Added Russian translation"
+msgstr "Nieuw: Russische vertaling"
+
+#: data/com.github.alexkdeveloper.dwxmlcreator.appdata.xml.in:56
+msgid "Initial release"
+msgstr "Eerste versie"
+
+#: src/window.ui:29
+msgid "Enter start time"
+msgstr "Voer een begintijd in"
+
+#: src/window.ui:53
+msgid "day:"
+msgstr "Dag:"
+
+#: src/window.ui:91
+msgid "month:"
+msgstr "Maand:"
+
+#: src/window.ui:129
+msgid "year:"
+msgstr "Jaar:"
+
+#: src/window.ui:180
+msgid "hours:"
+msgstr "Uur:"
+
+#: src/window.ui:218
+msgid "minutes:"
+msgstr "Minuut:"
+
+#: src/window.ui:257
+msgid "seconds:"
+msgstr "Seconde:"
+
+#: src/window.ui:294
+msgid "TO ADD IMAGES"
+msgstr "AFBEELDINGEN TOEVOEGEN"
+
+#: src/window.ui:308
+msgid "page0"
+msgstr "pagina0"
+
+#: src/window.ui:322 src/window.vala:267
+msgid "Add images"
+msgstr "Afbeeldingen toevoegen"
+
+#: src/window.ui:340
+msgid "specify the path to the image:"
+msgstr "Voer de afbeeldingslocatie in:"
+
+#: src/window.ui:383
+msgid "transition duration (sec):"
+msgstr "Overgangsduur (in sec.):"
+
+#: src/window.ui:397
+msgid "5"
+msgstr "5"
+
+#: src/window.ui:422
+msgid "duration of the show (min):"
+msgstr "Duur van diavoorstelling (in min.):"
+
+#: src/window.ui:436
+msgid "60"
+msgstr "60"
+
+#: src/window.ui:453
+msgid "ADD"
+msgstr "TOEVOEGEN"
+
+#: src/window.ui:473
+msgid "TO CREATE A FILE"
+msgstr "BESTAND AANMAKEN"
+
+#: src/window.ui:487
+msgid "page1"
+msgstr "pagina1"
+
+#: src/window.ui:502
+msgid "Specify the name and location of the file"
+msgstr "Voer de naam en bestandslocatie in"
+
+#: src/window.ui:520
+msgid "specify where to save the file:"
+msgstr "Geef aan waar het bestand moet worden opgeslagen:"
+
+#: src/window.ui:557
+msgid "specify the file name:"
+msgstr "Geef het bestand een naam:"
+
+#: src/window.ui:586
+msgid "CREATE XML FILE"
+msgstr "XML-BESTAND SAMENSTELLEN"
+
+#: src/window.ui:600
+msgid "page2"
+msgstr "pagina2"
+
+#: src/window.ui:618
+msgid "Back"
+msgstr "Terug"
+
+#: src/window.vala:181
+msgid "Enter correct data in all fields!"
+msgstr "Voer de juiste gegevens in!"
+
+#: src/window.vala:260
+msgid "File created successfully"
+msgstr "Het bestand is samengesteld"
+
+#: src/window.vala:262
+msgid ""
+"An unknown error has occurred!\n"
+"Failed to create file"
+msgstr ""
+"Er is een fout opgetreden! "
+"Het bestand kan hierdoor niet worden aangemaakt."
+
+#: src/window.vala:270
+msgid "Select image file"
+msgstr "Kies een afbeeldingsbestand"
+
+#: src/window.vala:270 src/window.vala:302
+msgid "_Cancel"
+msgstr "_Annuleren"
+
+#: src/window.vala:270 src/window.vala:302
+msgid "_Open"
+msgstr "_Openen"
+
+#: src/window.vala:302
+msgid "Choose a directory"
+msgstr "Kies een map"
+
+#: src/window.vala:314
+msgid "Message"
+msgstr "Bericht"

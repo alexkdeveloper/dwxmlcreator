@@ -233,7 +233,6 @@ namespace Dwxmlcreator {
 		      return;
 		  }
 		 stack.visible_child = create_xml_box;
-		 path_to_xml_directory.set_text(Environment.get_home_dir());
 		 xml_name.set_text("dynamic_wallpaper_"+Random.int_range(100,10000).to_string());
 		}
         private void create_xml(){
@@ -267,11 +266,14 @@ namespace Dwxmlcreator {
             image_counter.set_text(_("Add images"));
         }
 		private void on_path_to_image(){
-		     var file_chooser = new Gtk.FileChooserDialog (_("Select image file"), this, Gtk.FileChooserAction.OPEN, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
+		     var file_chooser = new Gtk.FileChooserNative (_("Select image file"), this, Gtk.FileChooserAction.OPEN, null, null){
+                 local_only = true
+            };
 	    Gtk.FileFilter filter = new Gtk.FileFilter ();
 		file_chooser.set_filter (filter);
 		filter.add_mime_type ("image/jpeg");
         filter.add_mime_type ("image/png");
+	    filter.add_mime_type ("image/svg+xml");
         Gtk.Image preview_area = new Gtk.Image ();
 		file_chooser.set_preview_widget (preview_area);
 		file_chooser.update_preview.connect (() => {
@@ -292,18 +294,24 @@ namespace Dwxmlcreator {
 		if (last_folder != null) {
             file_chooser.set_current_folder (last_folder);
         }
-        if (file_chooser.run () == Gtk.ResponseType.ACCEPT) {
-            last_folder = file_chooser.get_current_folder ();
-            path_to_image.set_text(file_chooser.get_filename());
-        }
-        file_chooser.destroy ();
+		file_chooser.response.connect ((response_id) => {
+                if (response_id == Gtk.ResponseType.ACCEPT) {
+                     last_folder = file_chooser.get_current_folder ();
+                     path_to_image.set_text(file_chooser.get_filename());
+                }
+            });
+            file_chooser.show ();
 		}
 		private void on_path_to_xml_directory(){
-             var file_chooser = new Gtk.FileChooserDialog (_("Choose a directory"), this, Gtk.FileChooserAction.SELECT_FOLDER, _("_Cancel"), Gtk.ResponseType.CANCEL, _("_Open"), Gtk.ResponseType.ACCEPT);
-        if (file_chooser.run () == Gtk.ResponseType.ACCEPT) {
-            path_to_xml_directory.set_text(file_chooser.get_filename());
-        }
-        file_chooser.destroy ();
+             var file_chooser = new Gtk.FileChooserNative (_("Choose a directory"), this, Gtk.FileChooserAction.SELECT_FOLDER, null, null){
+                    local_only = true
+                };
+		file_chooser.response.connect ((response_id) => {
+                if (response_id == Gtk.ResponseType.ACCEPT) {
+                     path_to_xml_directory.set_text(file_chooser.get_filename());
+                }
+            });
+            file_chooser.show ();
 		}
 		private void set_widget_visible (Gtk.Widget widget, bool visible) {
          widget.no_show_all = !visible;

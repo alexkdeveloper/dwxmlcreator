@@ -81,7 +81,7 @@ namespace Dwxmlcreator {
               on_path_to_image();
            }
         });
-        path_to_xml_directory.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "document-open-symbolic");
+        path_to_xml_directory.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "folder-open-symbolic");
 			path_to_xml_directory.icon_press.connect ((pos, event) => {
         if (pos == Gtk.EntryIconPosition.SECONDARY) {
               on_path_to_xml_directory();

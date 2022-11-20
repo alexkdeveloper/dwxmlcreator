@@ -121,6 +121,10 @@ msgstr "Введите корректные данные во все поля!"
 msgid " images were added"
 msgstr " изображение было добавлено"
 
+#: src/window.vala:240
+msgid "Nothing to create"
+msgstr "Нечего создавать"
+
 #: src/window.vala:259
 msgid "File created successfully"
 msgstr "Файл успешно создан"

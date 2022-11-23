@@ -4,15 +4,15 @@ dwxmlcreator_sources = [
 ]
 
 dwxmlcreator_deps = [
-  dependency('gio-2.0', version: '>= 2.50'),
-  dependency('gtk+-3.0', version: '>= 3.22'),
+  dependency ('gtk4'),
+  dependency ('libadwaita-1'),
 ]
 
 gnome = import('gnome')
 
 dwxmlcreator_sources += gnome.compile_resources('dwxmlcreator-resources',
   'dwxmlcreator.gresource.xml',
-  c_name: 'dwxmlcreator'
+  c_name: 'dwxmlcreator',
 )
 
 executable('com.github.alexkdeveloper.dwxmlcreator', dwxmlcreator_sources, 

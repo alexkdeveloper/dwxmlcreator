@@ -28,6 +28,13 @@
 	  </screenshots>
 	  <content_rating type="oars-1.1"/>
 	  <releases>
+	    <release version="1.0.7" date="2022-11-23">
+                <description>
+                  <ul>
+                     <li>Port to GTK4 and libadwaita</li>
+                  </ul>
+               </description>
+             </release>
 	    <release version="1.0.6" date="2022-11-19">
                 <description>
                   <ul>

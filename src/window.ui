@@ -66,6 +66,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="label" translatable="yes">Enter start time</property>
+                    <property name="wrap">True</property>
                     <style>
                       <class name="title-2"/>
                     </style>
@@ -230,6 +231,7 @@
                   <object class="GtkLabel" id="image_counter">
                     <property name="height-request">8</property>
                     <property name="label" translatable="yes">Add images</property>
+                    <property name="wrap">True</property>
                     <style>
                       <class name="title-2"/>
                     </style>
@@ -293,6 +295,7 @@
                         <property name="label" translatable="yes">ADD</property>
                         <style>
                           <class name="title-2"/>
+                          <class name="suggested-action"/>
                         </style>
                       </object>
                     </child>
@@ -307,6 +310,7 @@
                 <child>
                   <object class="GtkLabel">
                     <property name="label" translatable="yes">Specify the name and location of the file</property>
+                    <property name="wrap">True</property>
                     <style>
                       <class name="title-2"/>
                     </style>

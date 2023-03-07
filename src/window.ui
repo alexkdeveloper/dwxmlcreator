@@ -45,6 +45,7 @@
         </child>
         <child>
         <object class="AdwToastOverlay" id="overlay">
+        <property name="vexpand">True</property>
         <child>
         <object class="AdwClamp">
           <property name="tightening-threshold">100</property>

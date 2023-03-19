@@ -1,0 +1,155 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2022-11-19 19:39+0800\n"
+"PO-Revision-Date: 2023-03-18 13:50+0300\n"
+"Last-Translator: Serkan ÖNDER <serkanonder@outlook.com>\n"
+"Language-Team: \n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: data\n"
+"X-Poedit-SearchPath-1: src\n"
+"X-Poedit-SearchPath-2: src/window.vala\n"
+
+#: src/window.ui:29
+msgid "Enter start time"
+msgstr "Başlangıç zamanını girin"
+
+#: src/window.ui:53
+msgid "day:"
+msgstr "gün:"
+
+#: src/window.ui:91
+msgid "month:"
+msgstr "ay:"
+
+#: src/window.ui:129
+msgid "year:"
+msgstr "yıl:"
+
+#: src/window.ui:180
+msgid "hours:"
+msgstr "saat:"
+
+#: src/window.ui:218
+msgid "minutes:"
+msgstr "dakika:"
+
+#: src/window.ui:257
+msgid "seconds:"
+msgstr "saniye:"
+
+#: src/window.ui:294
+msgid "TO ADD IMAGES"
+msgstr "GÖRÜNTÜ EKLEMEK İÇİN"
+
+#: src/window.ui:308
+msgid "page0"
+msgstr "sayfa0"
+
+#: src/window.ui:322 src/window.vala:266
+msgid "Add images"
+msgstr "Görsel ekle"
+
+#: src/window.ui:340
+msgid "specify the path to the image:"
+msgstr "görüntünün yolunu belirtin:"
+
+#: src/window.ui:383
+msgid "transition duration (sec):"
+msgstr "geçiş süresi (sn):"
+
+#: src/window.ui:397
+msgid "5"
+msgstr "5"
+
+#: src/window.ui:422
+msgid "duration of the show (min):"
+msgstr "gösteri süresi (dk):"
+
+#: src/window.ui:436
+msgid "60"
+msgstr "60"
+
+#: src/window.ui:453
+msgid "ADD"
+msgstr "EKLE"
+
+#: src/window.ui:473
+msgid "TO CREATE A FILE"
+msgstr "DOSYA OLUŞTURMAK İÇİN"
+
+#: src/window.ui:487
+msgid "page1"
+msgstr "sayfa1"
+
+#: src/window.ui:502
+msgid "Specify the name and location of the file"
+msgstr "Dosyanın adını ve konumunu belirtin"
+
+#: src/window.ui:520
+msgid "specify where to save the file:"
+msgstr "dosyanın nereye kaydedileceğini belirtin:"
+
+#: src/window.ui:557
+msgid "specify the file name:"
+msgstr "dosya adını belirtin:"
+
+#: src/window.ui:586
+msgid "CREATE XML FILE"
+msgstr "XML DOSYASI OLUŞTUR"
+
+#: src/window.ui:600
+msgid "page2"
+msgstr "sayfa2"
+
+#: src/window.ui:618
+msgid "Back"
+msgstr "Geri"
+
+#: src/window.vala:181
+msgid "Enter correct data in all fields!"
+msgstr "Tüm alanlara doğru verileri girin!"
+
+#: src/window.vala:226
+msgid " images were added"
+msgstr " resimler eklendi"
+
+#: src/window.vala:240
+msgid "Nothing to create"
+msgstr "Oluşturulacak bir şey yok"
+
+#: src/window.vala:259
+msgid "File created successfully"
+msgstr "Dosya başarıyla oluşturuldu"
+
+#: src/window.vala:261
+msgid ""
+"An unknown error has occurred!\n"
+"Failed to create file"
+msgstr ""
+"Bilinmeyen bir hata oluştu!\n"
+"Dosya oluşturulamadı"
+
+#: src/window.vala:269
+msgid "Select image file"
+msgstr "Resim dosyası seçin"
+
+#: src/window.vala:306
+msgid "Choose a directory"
+msgstr "Bir dizin seçin"
+
+#: src/window.vala:322
+msgid "Message"
+msgstr "Mesaj"
+
+msgid "_Cancel"
+msgstr "_Vazgeç"
+
+msgid "_Open"
+msgstr "_Aç"

@@ -254,31 +254,44 @@ namespace Dwxmlcreator {
             image_counter.set_text(_("Add images"));
         }
 		private void on_path_to_image(){
-		     var file_chooser = new Gtk.FileChooserNative (_("Select image file"), this, Gtk.FileChooserAction.OPEN, null, null){
-                 modal = true
+            var filter = new Gtk.FileFilter ();
+            filter.add_mime_type ("image/jpeg");
+            filter.add_mime_type ("image/png");
+            filter.add_mime_type ("image/svg+xml");
+
+            var filechooser = new Gtk.FileDialog () {
+                title = _("Select image file"),
+                modal = true,
+                default_filter = filter
             };
-	    Gtk.FileFilter filter = new Gtk.FileFilter ();
-		file_chooser.set_filter (filter);
-		filter.add_mime_type ("image/jpeg");
-        filter.add_mime_type ("image/png");
-	    filter.add_mime_type ("image/svg+xml");
-		file_chooser.response.connect ((response_id) => {
-                if (response_id == Gtk.ResponseType.ACCEPT) {
-                     path_to_image.set_text(file_chooser.get_file().get_path());
+            filechooser.open.begin (this, null, (obj, res) => {
+                try {
+                    var file = filechooser.open.end (res);
+                    if (file == null) {
+                        return;
+                    }
+                    path_to_image.text = file.get_path ();
+                } catch (Error e) {
+                    warning ("Failed to select image file: %s", e.message);
                 }
             });
-            file_chooser.show ();
 		}
 		private void on_path_to_xml_directory(){
-             var file_chooser = new Gtk.FileChooserNative (_("Choose a directory"), this, Gtk.FileChooserAction.SELECT_FOLDER, null, null){
-                    modal = true
-                };
-		file_chooser.response.connect ((response_id) => {
-                if (response_id == Gtk.ResponseType.ACCEPT) {
-                     path_to_xml_directory.set_text(file_chooser.get_file().get_path());
+             var filechooser = new Gtk.FileDialog () {
+                title = _("Choose a directory"),
+                modal = true
+            };
+            filechooser.select_folder.begin (this, null, (obj, res) => {
+                try {
+                    var file = filechooser.select_folder.end (res);
+                    if (file == null) {
+                        return;
+                    }
+                    path_to_xml_directory.text = file.get_path ();
+                } catch (Error e) {
+                    warning ("Failed to choose a directory: %s", e.message);
                 }
             });
-            file_chooser.show ();
 		}
 		private void set_widget_visible (Gtk.Widget widget, bool visible) {
          widget.visible = !visible;

@@ -28,6 +28,13 @@
 	  </screenshots>
 	  <content_rating type="oars-1.1"/>
 	  <releases>
+	    <release version="1.0.11" date="2023-08-18">
+                <description>
+                  <ul>
+                     <li>Port to FileDialog</li>
+                  </ul>
+               </description>
+             </release>
 	    <release version="1.0.10" date="2023-03-22">
                 <description>
                   <ul>
@@ -35,7 +42,7 @@
                   </ul>
                </description>
              </release>
-            <release version="1.0.9" date="2023-03-07">
+      <release version="1.0.9" date="2023-03-07">
                 <description>
                   <ul>
                      <li>Fixed UI</li>

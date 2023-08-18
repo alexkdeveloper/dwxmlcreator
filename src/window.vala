@@ -253,7 +253,7 @@ namespace Dwxmlcreator {
             xml_name.set_text("");
             image_counter.set_text(_("Add images"));
         }
-		private void on_path_to_image(){
+	private void on_path_to_image(){
             var filter = new Gtk.FileFilter ();
             filter.add_mime_type ("image/jpeg");
             filter.add_mime_type ("image/png");
@@ -276,7 +276,7 @@ namespace Dwxmlcreator {
                 }
             });
 		}
-		private void on_path_to_xml_directory(){
+	private void on_path_to_xml_directory(){
              var filechooser = new Gtk.FileDialog () {
                 title = _("Choose a directory"),
                 modal = true
@@ -293,7 +293,7 @@ namespace Dwxmlcreator {
                 }
             });
 		}
-		private void set_widget_visible (Gtk.Widget widget, bool visible) {
+	private void set_widget_visible (Gtk.Widget widget, bool visible) {
          widget.visible = !visible;
          widget.visible = visible;
        }

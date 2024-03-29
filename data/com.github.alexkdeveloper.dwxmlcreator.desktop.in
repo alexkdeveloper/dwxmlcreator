@@ -5,6 +5,6 @@ Icon=com.github.alexkdeveloper.dwxmlcreator
 Exec=com.github.alexkdeveloper.dwxmlcreator
 Terminal=false
 Type=Application
-Categories=GTK;Graphics;
+Categories=GTK;GNOME;Utility;
 Keywords=Dynamic;Wallpaper;
 StartupNotify=true
